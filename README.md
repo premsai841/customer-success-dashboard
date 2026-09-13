@@ -1,21 +1,22 @@
 # Customer Success Dashboard
 
-> A practical customer-health dashboard for monitoring account engagement, support activity, renewal risk, and success signals.
+> A practical portfolio project showing how customer activity and service signals can be organized into a simple customer-health view for Customer Success follow-up.
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-data%20analysis-150458?style=flat-square&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+## Career context
 
-## Purpose
+This project supports my Customer Success career focus. It reflects the type of work I want to understand better: customer health monitoring, risk identification, follow-up prioritization, reporting, and process improvement.
 
-Customer Success teams need a repeatable way to turn account activity into an actionable health view. This project demonstrates a lightweight workflow for calculating customer health scores from engagement, support, adoption, and renewal signals.
+## Business problem
 
-## What it demonstrates
+Customer Success teams need a repeatable way to identify accounts that may need attention. A health view can combine engagement, support activity, satisfaction, and renewal timing into one reviewable report.
 
-- Data cleaning and validation with pandas
-- Rule-based customer health scoring
-- Risk segmentation: Healthy / Watch / At Risk
-- Identification of accounts needing follow-up
-- Reproducible CSV-to-report workflow
+## What the project demonstrates
+
+- Customer-health thinking and risk segmentation
+- Data validation and structured reporting
+- Rule-based prioritization
+- Identifying accounts that need follow-up
+- Turning customer signals into an operational view
 
 ## Input signals
 
@@ -26,6 +27,22 @@ Customer Success teams need a repeatable way to turn account activity into an ac
 | Support tickets | Support demand and friction |
 | CSAT | Customer satisfaction |
 | Renewal proximity | Commercial urgency |
+
+## Workflow
+
+```text
+Customer data
+    ↓
+Validate input
+    ↓
+Calculate health score
+    ↓
+Segment account risk
+    ↓
+Prioritize follow-up
+    ↓
+Generate customer-health report
+```
 
 ## Project structure
 
@@ -49,24 +66,18 @@ python src/health_score.py
 
 The script prints a customer-health summary and writes `data/customer_health_output.csv`.
 
-## Scoring model
+## Technical learning
 
-The demo uses transparent business rules rather than a black-box model. Each account receives points for positive engagement and loses points for support volume, low satisfaction, and renewal proximity.
+The implementation uses Python and Pandas as learning tools for processing structured data. I am not presenting this project as evidence of professional software-development experience.
 
-This makes the logic easy for a Customer Success or Operations team to inspect and adjust.
+## Scoring approach
 
-## Example use cases
-
-- Weekly customer-health review
-- CSM follow-up prioritization
-- Renewal-risk monitoring
-- Support-to-success handoff
-- Customer portfolio reporting
+The demo uses transparent business rules rather than a black-box model. Accounts receive points for positive engagement and lose points for support volume, lower satisfaction, and renewal proximity. The logic is intentionally easy for a Customer Success or Operations team to inspect and adjust.
 
 ## Scope
 
-This is a portfolio project using synthetic sample data. It is not connected to a live CRM or customer database.
+Synthetic sample data only. No real customer, CRM, or company data is included.
 
 ## Author
 
-**Prem Sai Bachchala** — Customer Success / Operations focused portfolio project.
+**Prem Sai Bachchala** — Customer Success / Customer Support / Operations portfolio.
