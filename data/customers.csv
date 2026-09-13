@@ -1,0 +1,9 @@
+customer_id,customer_name,monthly_active_users,logins_30d,support_tickets_30d,csat,days_to_renewal
+C001,Northstar Retail,42,18,2,4.7,120
+C002,BluePeak Labs,18,6,7,3.4,45
+C003,Orbit Systems,35,14,3,4.2,210
+C004,Greenline Media,11,4,8,3.1,30
+C005,Vertex Foods,29,12,1,4.8,75
+C006,Harbor Finance,24,9,4,3.9,150
+C007,Metro Works,8,3,9,2.8,20
+C008,SilverOak Health,39,16,2,4.5,180
